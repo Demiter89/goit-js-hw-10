@@ -39,6 +39,7 @@ body {
     background-color: #2980b9;
     transform: translateX(-50%) scale(1.05);
 }
+
 form {
     display: flex;
     flex-direction: column;

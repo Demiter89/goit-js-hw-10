@@ -1,3 +1,5 @@
+import iziToast from "izitoast";
+
 // Підключення DOM елементів
 const form = document.querySelector('.form');
 const delayInput = document.querySelector('#delay');
