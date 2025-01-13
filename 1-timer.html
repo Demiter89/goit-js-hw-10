@@ -6,127 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
   <title>Countdown Timer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <style>
-    /* Фоновий градієнт із жорстким блакитним і зеленим */
-    body {
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(to bottom right, #0077b6, #00b4d8, #90e0ef, #48cae4);
-      background-size: 300% 300%;
-      animation: backgroundShift 8s ease infinite;
-    }
-
-    @keyframes backgroundShift {
-
-      0%,
-      100% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    .timer-container {
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .time-input {
-      width: 300px;
-      padding: 12px;
-      border: 2px solid #aaa;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      font-size: 18px;
-      transition: border-color 0.3s ease;
-    }
-
-    .time-input:focus {
-      border-color: #00b4d8;
-      outline: none;
-      box-shadow: 0 0 8px rgba(0, 180, 216, 0.5);
-    }
-
-    .start-btn {
-      background: linear-gradient(to right, #00b894, #009688, #00796b);
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    }
-
-    .start-btn:hover {
-      background: linear-gradient(to right, #00796b, #009688, #00b894);
-      box-shadow: 0 4px 10px rgba(0, 121, 107, 0.5);
-      transform: translateY(-3px);
-    }
-
-    .start-btn:disabled {
-      background: #ccc;
-      cursor: not-allowed;
-    }
-
-    .timer-display {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .time-segment {
-      text-align: center;
-    }
-
-    .time-value {
-      font-size: 48px;
-      font-weight: bold;
-      color: #0077b6;
-    }
-
-    .time-label {
-      font-size: 16px;
-      color: #666;
-      margin-top: 5px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #0077b6;
-      border-radius: 8px;
-      font-size: 16px;
-      text-align: center;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .back-link:hover {
-      background-color: #005f8e;
-      transform: translateY(-2px);
-    }
-
-    .back-link:active {
-      transform: translateY(0);
-    }
-  </style>
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-iDiwpJ8A.css">
+  <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-XUTJ-Nt1.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-DRAOUfWK.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/1-timer-3tXcFNK6.css">
 </head>
 
 <body>
@@ -153,11 +37,6 @@
       </div>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
-  <script src="./js/1-timer.js"></script>
 </body>
 
 </html>
